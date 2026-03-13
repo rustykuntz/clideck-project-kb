@@ -1,18 +1,18 @@
 # clideck-project-kb
 
-A [CliDeck](https://clideck.dev) plugin that saves all your inputs from every session into a per-project knowledge base file. Point your agents to this file so they can see what you've asked other agents in the same project.
+A [CliDeck](https://github.com/rustykuntz/clideck) plugin that saves all your inputs from every session into a per-project knowledge base file. Point your agents to this file so they can see what you've asked other agents in the same project.
 
 ## What it does
 
 Every time you send input to any session, the plugin appends it to a markdown file in that session's working directory:
 
 ```markdown
-# Claude Code
+# Backend architect (Claude Code)
 
 - implement the auth module using JWT
 - add rate limiting to the API endpoints
 
-# Gemini CLI
+# Security reviewer (Gemini CLI)
 
 - review the auth module for security issues
 - check if rate limiting handles edge cases
@@ -22,9 +22,14 @@ All sessions sharing the same working directory contribute to the same file. Age
 
 ## Install
 
+**macOS / Linux:**
 ```bash
-# Clone into the CliDeck plugins directory
 git clone https://github.com/rustykuntz/clideck-project-kb.git ~/.clideck/plugins/project-kb
+```
+
+**Windows:**
+```powershell
+git clone https://github.com/rustykuntz/clideck-project-kb.git "%USERPROFILE%\.clideck\plugins\project-kb"
 ```
 
 Restart CliDeck. The plugin appears in the Plugins panel.
