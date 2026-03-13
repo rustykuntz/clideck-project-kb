@@ -1,0 +1,22 @@
+{
+  "id": "project-kb",
+  "name": "Project Knowledge Base",
+  "version": "1.0.0",
+  "author": "Or Kuntzman",
+  "description": "Saves user inputs from all sessions into a per-project knowledge base file that other agents can reference",
+  "settings": [
+    {
+      "key": "enabled",
+      "label": "Enabled",
+      "type": "toggle",
+      "default": true
+    },
+    {
+      "key": "filename",
+      "label": "Knowledge base filename",
+      "type": "text",
+      "default": "project-kb.md",
+      "description": "Written to each session's working directory"
+    }
+  ]
+}
